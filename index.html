@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Pesquisa</title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="collect_data.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pesquisa sobre qualidade de áudio</h1>
+    </header>
+</body>
+
+<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+
+    <fieldset>
+        <legend>Qual o seu gênero?</legend>
+        <select name="entry.943883290" id="genero" required>
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Prefiro não responder</option>
+        </select>
+    </fieldset>
+
+    <label for="idade">Qual a sua idade? (SOMENTE número, exemplo: 25)</label>
+    <textarea name="entry.1948568854" cols="2" rows="1" id="idade" class="input-padrao"></textarea>
+
+
+    <hr>
+    <audio controls>
+        <source src="frases/4_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.614831059" id="a1q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.379644413" id="a1q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/9_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.645336038" id="a2q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1956582696" id="a2q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+
+    <audio controls>
+        <source src="frases/12_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.762736056" id="a3q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.728189857" id="a3q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/4_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.735712697" id="a4q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.210672253" id="a4q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/7_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1961707095" id="a5q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.778379875" id="a5q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/20_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.629756052" id="a6q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1981590472" id="a6q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/17_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1706134439" id="a7q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1360623052" id="a7q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/3_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.745960150" id="a8q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1946654193" id="a8q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/9_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.2099313987" id="a9q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.365655106" id="a9q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/8_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.305181936" id="a10q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1956271144" id="a10q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/16_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1769489791" id="a11q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1682674160" id="a11q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/10_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.976023553" id="a12q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.607520869" id="a12q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/7_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.336680130" id="a13q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.626005238" id="a13q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/13_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.610360314" id="a14q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.15597140" id="a14q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/20_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1852071720" id="a15q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.750133495" id="a15q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/7_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1668558102" id="a16q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1044680938" id="a16q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/9_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.567297023" id="a17q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1003022545" id="a17q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/11_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1321984775" id="a18q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1512699382" id="a18q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/19_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1328816880" id="a19q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.311742917" id="a19q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/13_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1581597698" id="a20q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1756904223" id="a20q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/13_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.804133443" id="a21q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.912851670" id="a21q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/7_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.174297164" id="a22q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1993872054" id="a22q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/17_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.655451326" id="a23q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.941972324" id="a23q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/18_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1626117324" id="a24q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.740398030" id="a24q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/15_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.740398030" id="a25q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.303261906" id="a25q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/19_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1294231884" id="a26q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.989889947" id="a26q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/6_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.2012054776" id="a27q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.695918292" id="a27q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/3_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.987395515" id="a28q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1010481030" id="a28q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/3_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1718637424" id="a29q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1035971854" id="a29q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/10_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.265838228" id="a30q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.661492643" id="a30q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/13_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.203609397" id="a31q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1801054744" id="a31q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/3_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1917574722" id="a32q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.210379273" id="a32q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/17_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.2090597493" id="a33q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.849436636" id="a33q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/20_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1334688899" id="a34q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1604813849" id="a34q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/6_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.375992385" id="a35q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1495712338" id="a35q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/1_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.2042925890" id="a36q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.800534821" id="a36q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/6_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.127551180" id="a37q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1012526279" id="a37q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/19_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.96411978" id="a38q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.514487227" id="a38q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/6_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1230608566" id="a39q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1994646436" id="a39q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/11_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.94971704" id="a40q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.152116164" id="a40q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/8_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1125188777" id="a41q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1490413889" id="a41q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/6_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.307644049" id="a42q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.1238428696" id="a42q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/1_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.2073597213" id="a43q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.147761170" id="a43q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/13_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.865207678" id="a44q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.639795191" id="a44q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/10_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1596337841" id="a45q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.743947887" id="a45q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/18_sintetizado.wav" type="audio/wav">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.927087716" id="a46q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.843633785" id="a46q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/16_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.1967611736" id="a47q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.433184287" id="a47q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+    <audio controls>
+        <source src="frases/5_original.mp3" type="audio/mpeg">
+    </audio>
+    <fieldset>
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <select name="entry.40982424" id="a48q1" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <select name="entry.546355857" id="a48q2" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </fieldset>
+
+    <hr>
+
+    <!-- <fieldset id="myForm3">
+        <legend>O falante parece humano ou não? (1 = robô, 5 = pessoa)</legend>
+        <label for="radio1"><input type="radio" name="entry.645336038_sentinel" value="1" id="radio3">1</label>
+        <label for="radio2"><input type="radio" name="entry.645336038_sentinel" value="2" id="radio3">2</label>
+        <label for="radio3"><input type="radio" name="entry.645336038_sentinel" value="3" id="radio3">3</label>
+        <label for="radio4"><input type="radio" name="entry.645336038_sentinel" value="4" id="radio3">4</label>
+        <label for="radio5"><input type="radio" name="entry.645336038_sentinel" value="5" id="radio3">5</label>
+    </fieldset>
+
+    <fieldset id="myForm4">
+        <legend>O falante está falando português nativo? (1 = estrangeiro, 5 = nativo)</legend>
+        <label for="radio1"><input type="radio" name="entry.1956582696_sentinel" value="1" id="radio4">1</label>
+        <label for="radio2"><input type="radio" name="entry.1956582696_sentinel" value="2" id="radio4">2</label>
+        <label for="radio3"><input type="radio" name="entry.1956582696_sentinel" value="3" id="radio4">3</label>
+        <label for="radio4"><input type="radio" name="entry.1956582696_sentinel" value="4" id="radio4">4</label>
+        <label for="radio5"><input type="radio" name="entry.1956582696_sentinel" value="5" id="radio4">5</label>
+    </fieldset> -->
+
+    <!-- <div class="botao-enviar"> -->
+    <button id="send" type="submit" class="common_btn">Enviar respostas</button>
+    <!-- </div> -->
+
+</form>
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color: black; font-size: medium;"> Sua resposta foi registrada :-)</h3>
+
+
+<!-- <div class="signature">
+    <p>Feito para <a href="https://codelab.ime.usp.br/#/" target="_blank">USPCodeLab dev.research()</a></p>
+</div> -->
+
+</body>
+
+</html>

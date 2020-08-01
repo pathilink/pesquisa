@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #6a040f;
+    padding: 20px 0;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    position: center;
+    margin-left: 30px;
+    text-align: center
+}
+
+form {
+    margin: 30px 30px 30px 30px;
+}
+
+form label,
+form legend {
+    display: inline;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 10px 0 20px;
+    padding: 5px 5px;
+    width: 15%;
+}
+
+textarea {
+    resize: none;
+    display: block;
+}
+
+fieldset {
+    display: block;
+    float: none;
+}
+
+audio {
+    display: block;
+    margin: 40px 30px 40px 0px;
+    float: left;
+}
+
+fieldset {
+    margin: 20px 0;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+
+.common_btn {
+    width: 15%;
+    padding: 15px 0;
+    background: #33415c;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    place-content: center;
+    margin: 15px 0px 30px;
+}
+
+.common_btn:hover {
+    background: black;
+    transform: scale(1.2);
+}
+
+
+/* .botao-enviar {
+    text-align: center
+} */
+
+
+/* .success-msg {
+    text-align: center !important;
+    margin-top: 190px !important;
+    display: none;
+    color: black;
+    font-size: medium;
+} */
+
+.signature {
+    margin: 40px 30px 40px 30px;
+    font-style: italic;
+}

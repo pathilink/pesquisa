@@ -185,7 +185,7 @@ function postToGoogle() {
             "entry.1956271144": field22,
 
             "entry.1769489791": field23,
-            "entry.1682674160": fiel24,
+            "entry.1682674160": field24,
 
             "entry.976023553": field25,
             "entry.607520869": field26,
@@ -230,7 +230,7 @@ function postToGoogle() {
             "entry.303261906": field52,
 
             "entry.1294231884": field53,
-            "entry.989889947": fiel54,
+            "entry.989889947": field54,
 
             "entry.2012054776": field55,
             "entry.695918292": field56,
@@ -275,7 +275,7 @@ function postToGoogle() {
             "entry.152116164": field82,
 
             "entry.1125188777": field83,
-            "entry.1490413889": fiel84,
+            "entry.1490413889": field84,
 
             "entry.307644049": field85,
             "entry.1238428696": field86,
